@@ -1,6 +1,6 @@
 ﻿namespace PCinfo
 {
-    partial class Form1
+    partial class PCInfo
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -29,18 +29,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PCInfo));
             this.buttongetinfo = new System.Windows.Forms.Button();
-            this.labelusername = new System.Windows.Forms.Label();
-            this.labelpcname = new System.Windows.Forms.Label();
-            this.labelipadress = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.lblusername = new System.Windows.Forms.Label();
+            this.lblpcname = new System.Windows.Forms.Label();
+            this.lblipadress = new System.Windows.Forms.Label();
+            this.butTestNet = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.labellocalnet = new System.Windows.Forms.Label();
-            this.labelglobalnet = new System.Windows.Forms.Label();
-            this.labelemtsnet = new System.Windows.Forms.Label();
+            this.lbllocalnet = new System.Windows.Forms.Label();
+            this.lblglobalnet = new System.Windows.Forms.Label();
+            this.lblEMTS = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -62,49 +62,49 @@
             this.buttongetinfo.UseVisualStyleBackColor = true;
             this.buttongetinfo.Visible = false;
             // 
-            // labelusername
+            // lblusername
             // 
-            this.labelusername.AutoSize = true;
-            this.labelusername.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelusername.Location = new System.Drawing.Point(6, 37);
-            this.labelusername.Name = "labelusername";
-            this.labelusername.Size = new System.Drawing.Size(102, 37);
-            this.labelusername.TabIndex = 3;
-            this.labelusername.Text = "label3";
-            this.labelusername.Visible = false;
+            this.lblusername.AutoSize = true;
+            this.lblusername.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblusername.Location = new System.Drawing.Point(6, 37);
+            this.lblusername.Name = "lblusername";
+            this.lblusername.Size = new System.Drawing.Size(102, 37);
+            this.lblusername.TabIndex = 3;
+            this.lblusername.Text = "label3";
+            this.lblusername.Visible = false;
             // 
-            // labelpcname
+            // lblpcname
             // 
-            this.labelpcname.AutoSize = true;
-            this.labelpcname.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelpcname.Location = new System.Drawing.Point(6, 37);
-            this.labelpcname.Name = "labelpcname";
-            this.labelpcname.Size = new System.Drawing.Size(102, 37);
-            this.labelpcname.TabIndex = 4;
-            this.labelpcname.Text = "label4";
-            this.labelpcname.Visible = false;
+            this.lblpcname.AutoSize = true;
+            this.lblpcname.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblpcname.Location = new System.Drawing.Point(6, 37);
+            this.lblpcname.Name = "lblpcname";
+            this.lblpcname.Size = new System.Drawing.Size(102, 37);
+            this.lblpcname.TabIndex = 4;
+            this.lblpcname.Text = "label4";
+            this.lblpcname.Visible = false;
             // 
-            // labelipadress
+            // lblipadress
             // 
-            this.labelipadress.AutoSize = true;
-            this.labelipadress.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelipadress.Location = new System.Drawing.Point(6, 37);
-            this.labelipadress.Name = "labelipadress";
-            this.labelipadress.Size = new System.Drawing.Size(102, 37);
-            this.labelipadress.TabIndex = 6;
-            this.labelipadress.Text = "label4";
-            this.labelipadress.Visible = false;
+            this.lblipadress.AutoSize = true;
+            this.lblipadress.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblipadress.Location = new System.Drawing.Point(6, 37);
+            this.lblipadress.Name = "lblipadress";
+            this.lblipadress.Size = new System.Drawing.Size(102, 37);
+            this.lblipadress.TabIndex = 6;
+            this.lblipadress.Text = "label4";
+            this.lblipadress.Visible = false;
             // 
-            // button2
+            // butTestNet
             // 
-            this.button2.Font = new System.Drawing.Font("Segoe Print", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(630, 249);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(124, 61);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "ТЕСТ";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.butTestNet.Font = new System.Drawing.Font("Segoe Print", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.butTestNet.Location = new System.Drawing.Point(630, 249);
+            this.butTestNet.Name = "butTestNet";
+            this.butTestNet.Size = new System.Drawing.Size(124, 61);
+            this.butTestNet.TabIndex = 9;
+            this.butTestNet.Text = "ТЕСТ";
+            this.butTestNet.UseVisualStyleBackColor = true;
+            this.butTestNet.Click += new System.EventHandler(this.button2_Click);
             // 
             // label6
             // 
@@ -136,42 +136,42 @@
             this.label8.TabIndex = 13;
             this.label8.Text = "ЕМТС сеть";
             // 
-            // labellocalnet
+            // lbllocalnet
             // 
-            this.labellocalnet.AutoSize = true;
-            this.labellocalnet.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labellocalnet.Location = new System.Drawing.Point(287, 37);
-            this.labellocalnet.Name = "labellocalnet";
-            this.labellocalnet.Size = new System.Drawing.Size(127, 37);
-            this.labellocalnet.TabIndex = 14;
-            this.labellocalnet.Text = "localnet";
-            this.labellocalnet.Visible = false;
+            this.lbllocalnet.AutoSize = true;
+            this.lbllocalnet.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbllocalnet.Location = new System.Drawing.Point(287, 37);
+            this.lbllocalnet.Name = "lbllocalnet";
+            this.lbllocalnet.Size = new System.Drawing.Size(127, 37);
+            this.lbllocalnet.TabIndex = 14;
+            this.lbllocalnet.Text = "localnet";
+            this.lbllocalnet.Visible = false;
             // 
-            // labelglobalnet
+            // lblglobalnet
             // 
-            this.labelglobalnet.AutoSize = true;
-            this.labelglobalnet.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelglobalnet.Location = new System.Drawing.Point(287, 95);
-            this.labelglobalnet.Name = "labelglobalnet";
-            this.labelglobalnet.Size = new System.Drawing.Size(147, 37);
-            this.labelglobalnet.TabIndex = 15;
-            this.labelglobalnet.Text = "globalnet";
-            this.labelglobalnet.Visible = false;
+            this.lblglobalnet.AutoSize = true;
+            this.lblglobalnet.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblglobalnet.Location = new System.Drawing.Point(287, 95);
+            this.lblglobalnet.Name = "lblglobalnet";
+            this.lblglobalnet.Size = new System.Drawing.Size(147, 37);
+            this.lblglobalnet.TabIndex = 15;
+            this.lblglobalnet.Text = "globalnet";
+            this.lblglobalnet.Visible = false;
             // 
-            // labelemtsnet
+            // lblEMTS
             // 
-            this.labelemtsnet.AutoSize = true;
-            this.labelemtsnet.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelemtsnet.Location = new System.Drawing.Point(287, 154);
-            this.labelemtsnet.Name = "labelemtsnet";
-            this.labelemtsnet.Size = new System.Drawing.Size(130, 37);
-            this.labelemtsnet.TabIndex = 16;
-            this.labelemtsnet.Text = "emtsnet";
-            this.labelemtsnet.Visible = false;
+            this.lblEMTS.AutoSize = true;
+            this.lblEMTS.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblEMTS.Location = new System.Drawing.Point(287, 154);
+            this.lblEMTS.Name = "lblEMTS";
+            this.lblEMTS.Size = new System.Drawing.Size(130, 37);
+            this.lblEMTS.TabIndex = 16;
+            this.lblEMTS.Text = "emtsnet";
+            this.lblEMTS.Visible = false;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.labelusername);
+            this.groupBox1.Controls.Add(this.lblusername);
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.groupBox1.Location = new System.Drawing.Point(56, 37);
             this.groupBox1.Name = "groupBox1";
@@ -182,7 +182,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.labelpcname);
+            this.groupBox2.Controls.Add(this.lblpcname);
             this.groupBox2.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.groupBox2.Location = new System.Drawing.Point(56, 133);
             this.groupBox2.Name = "groupBox2";
@@ -193,7 +193,7 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.labelipadress);
+            this.groupBox3.Controls.Add(this.lblipadress);
             this.groupBox3.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.groupBox3.Location = new System.Drawing.Point(56, 229);
             this.groupBox3.Name = "groupBox3";
@@ -207,9 +207,9 @@
             this.groupBox4.Controls.Add(this.label6);
             this.groupBox4.Controls.Add(this.label7);
             this.groupBox4.Controls.Add(this.label8);
-            this.groupBox4.Controls.Add(this.labellocalnet);
-            this.groupBox4.Controls.Add(this.labelemtsnet);
-            this.groupBox4.Controls.Add(this.labelglobalnet);
+            this.groupBox4.Controls.Add(this.lbllocalnet);
+            this.groupBox4.Controls.Add(this.lblEMTS);
+            this.groupBox4.Controls.Add(this.lblglobalnet);
             this.groupBox4.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.groupBox4.Location = new System.Drawing.Point(480, 37);
             this.groupBox4.Name = "groupBox4";
@@ -218,7 +218,7 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Состояние сети";
             // 
-            // Form1
+            // PCInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -227,12 +227,12 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.butTestNet);
             this.Controls.Add(this.buttongetinfo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Form1";
+            this.Name = "PCInfo";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ARM info";
@@ -251,16 +251,16 @@
         #endregion
 
         private System.Windows.Forms.Button buttongetinfo;
-        private System.Windows.Forms.Label labelusername;
-        private System.Windows.Forms.Label labelpcname;
-        private System.Windows.Forms.Label labelipadress;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label lblusername;
+        private System.Windows.Forms.Label lblpcname;
+        private System.Windows.Forms.Label lblipadress;
+        private System.Windows.Forms.Button butTestNet;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label labellocalnet;
-        private System.Windows.Forms.Label labelglobalnet;
-        private System.Windows.Forms.Label labelemtsnet;
+        private System.Windows.Forms.Label lbllocalnet;
+        private System.Windows.Forms.Label lblglobalnet;
+        private System.Windows.Forms.Label lblEMTS;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
