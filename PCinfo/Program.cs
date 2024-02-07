@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PCInfo.BL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,10 @@ namespace PCinfo
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PCInfo());
+            PCInfo pCInfo = new PCInfo();
+            Model model = new Model();
+            MainPresenter mainPresenter = new MainPresenter(pCInfo,model);
+            Application.Run(pCInfo);
         }
     }
 }

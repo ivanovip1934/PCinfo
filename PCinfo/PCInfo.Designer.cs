@@ -68,9 +68,9 @@
             this.lblusername.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblusername.Location = new System.Drawing.Point(6, 37);
             this.lblusername.Name = "lblusername";
-            this.lblusername.Size = new System.Drawing.Size(102, 37);
+            this.lblusername.Size = new System.Drawing.Size(180, 37);
             this.lblusername.TabIndex = 3;
-            this.lblusername.Text = "label3";
+            this.lblusername.Text = "lblusename";
             this.lblusername.Visible = false;
             // 
             // lblpcname
@@ -104,7 +104,6 @@
             this.butTestNet.TabIndex = 9;
             this.butTestNet.Text = "ТЕСТ";
             this.butTestNet.UseVisualStyleBackColor = true;
-            this.butTestNet.Click += new System.EventHandler(this.button2_Click);
             // 
             // label6
             // 

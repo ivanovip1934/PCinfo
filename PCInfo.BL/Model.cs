@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Net;
 using System.Net.NetworkInformation;
@@ -10,30 +11,22 @@ using System.Threading.Tasks;
 namespace PCInfo.BL
 {
     public interface IModel {
-        void GetInfo();
+        PCInfoData GetInfo();
+        bool ConnectionISGood(string host);
     }
 
     public class Model:IModel
     {
-        public void GetInfo()
+        public PCInfoData GetInfo()
         {
-            //this.lblusername.Text = WindowsIdentity.GetCurrent().Name.Replace("OMSU\\", "");
-            this.lblpcname.Text = Environment.MachineName;
-            this.ipadress = ShowIPv4Address();
-            this.lblipadress.Text = String.Empty;
-
-            foreach (string ip in ipadress)
-            {
-
-                this.lblipadress.Text += $"{ip}\n";
-            }
-
-            this.lblpcname.Visible = true;
-            this.lblusername.Visible = true;
-            this.lblipadress.Visible = true;
+            PCInfoData pcinfo = new PCInfoData();
+            pcinfo.PCName = WindowsIdentity.GetCurrent().Name.Replace("OMSU\\", "");
+            pcinfo.PCName = Environment.MachineName;
+            pcinfo.Address = ShowIPv4Address();
+            return pcinfo;
 
         }
-        private static List<string> ShowIPv4Address()
+        private  List<string> ShowIPv4Address()
         {
 
             List<string> IpAddress = new List<string>();
@@ -54,6 +47,34 @@ namespace PCInfo.BL
                     }
                 }
             return IpAddress;
+        }
+        public  bool ConnectionISGood(string host)
+        {              //host is ip or dns name
+
+
+            Ping pingSender = new Ping();
+            PingOptions options = new PingOptions();
+
+            options.DontFragment = false;
+
+            // Create a buffer of 32 bytes of data to be transmitted.
+            string data = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+            byte[] buffer = Encoding.ASCII.GetBytes(data);
+            int timeout = 120;
+            try
+            {
+
+                PingReply reply = pingSender.Send(host, timeout, buffer, options);
+                if (reply.Status == IPStatus.Success)
+                    return true;
+                else
+                    return false;
+            }
+            catch
+            {
+                return false;
+            }
+
         }
 
     }
