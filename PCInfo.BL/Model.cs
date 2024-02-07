@@ -20,7 +20,7 @@ namespace PCInfo.BL
         public PCInfoData GetInfo()
         {
             PCInfoData pcinfo = new PCInfoData();
-            pcinfo.PCName = WindowsIdentity.GetCurrent().Name.Replace("OMSU\\", "");
+            pcinfo.UserName = WindowsIdentity.GetCurrent().Name.Replace("OMSU\\", "");
             pcinfo.PCName = Environment.MachineName;
             pcinfo.Address = ShowIPv4Address();
             return pcinfo;
